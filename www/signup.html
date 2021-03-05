@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/spinner.css">
+	<link rel="stylesheet" href="themify-icons/themify-icons.css">
+	<link rel="stylesheet" href="fa-4.7.0/css/font-awesome.css">
+	<title>Signup</title>
+	<style type="text/css">
+		#main {display: none;}
+		.border-bottom {
+			border: none !important;
+			border-bottom:1px solid black !important;
+		}
+	</style>
+</head>
+<body>
+	<div class="row">
+		<!-- Modal -->
+		<div class="modal fade" id="ToCModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Temrs & Conditions</h5>
+					</div>
+					<div class="modal-body">
+						<div class="container">
+							<b>lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</b>
+							<li>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</li>
+							<li>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</li>
+							<li>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</li>
+							<li>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</li>
+							<li>proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" id="closeToCModal" class="btn btn-primary">Ok got it</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="loader">
+		<div class="loader" role="status">
+		</div>
+	</div>
+	<div id="main">
+		<div class="row bg-primary">
+			<div class="container">
+				<div class="pt-2 pb-2 text-center text-white">
+					<h5>Findsky</h5>
+					<p><span class="ti ti-pencil"></span> Get registered just in a minute!</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<form class="form mt-5" onsubmit="return false">
+				<div class="mb-3">
+					<label for="exampleInputContact1" class="form-label ti ti-mobile"> Contact</label>
+					<input type="number" class="form-control border-bottom" id="exampleInputContact1" aria-describedby="emailHelp" autocomplete="off">
+					<div id="emailHelp" class="form-text">We'll never share your contact with anyone else.</div>
+				</div>
+				<div class="mb-3">
+					<label for="exampleInputEmail1" class="form-label ti ti-email"> Email</label>
+					<input type="email" class="form-control border-bottom" id="exampleInputEmail1" aria-describedby="emailHelp" autocomplete="off">
+					<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+				</div>
+				<div class="mb-3">
+					<label for="exampleInputPassword1" class="form-label ti ti-lock"> Password</label>
+					<input type="password" class="form-control border-bottom" id="exampleInputPassword1">
+				</div>
+				<div class="mb-3 form-check">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1">
+					<label class="form-check-label" for="exampleCheck1">I agree with <a href="#" id="PopUpToCModal">terms & conditions</a></label>
+				</div>
+				<div class="d-grid">
+					<button type="submit" class="btn btn-primary btn-block" id="btnSubmit"><span class="ti ti-pencil"></span> Signup</button>
+				</div>
+			</form>
+			<div class="mt-3">
+				<a href="signin.html" class="float-left">Signin now</a>
+				<a href="forgot-password.html" class="float-right text-danger">Forgot password?</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#loader").fadeOut(1000);
+			$("#main").fadeIn(1000);
+
+			$("#PopUpToCModal").on('click',function(){
+				$("#ToCModal").modal('toggle');
+			});
+			$("#closeToCModal").on('click',function(){
+				$("#ToCModal").modal('toggle');
+			});
+			$("#btnSubmit").on('click',function(){
+				window.location='home.html';
+			});
+		});
+	</script>
+</body>
+</html>

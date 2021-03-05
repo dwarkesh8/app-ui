@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/spinner.css">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="fa-4.7.0/css/font-awesome.css">
+
+    <title>Chat list</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+        #main {display: none;}
+        .navbar {
+            overflow: hidden;
+            background-color: #0d6efd;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 6px 14px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            /*background: #f1f1f1;*/
+            color: black;
+        }
+        .navbar a.active {
+            /*background-color: #4CAF50;*/
+            color: white;
+        }
+        .parent {
+          display: flex;
+      }
+      .right {
+          margin-left: auto;
+          order: 2;
+      }
+      .badge-dark {
+        color: #fff;
+        background-color: #343a40;
+    }
+    .badge-pill {
+        /*padding: .3em .6em .3em .6em;*/
+        padding-right: .6em;
+        padding-left: .6em;
+        border-radius: 10rem;
+    }
+</style>
+</head>
+<body>
+    <div id="loader">
+        <div class="loader" role="status">
+        </div>
+    </div>
+    <div id="main">
+        <div class="fixed-top p-3 bg-primary text-center">
+            <div class="parent">
+              <div class="text-white text-center"><span class="ti ti-arrow-left"></span></div>
+              <div class="right text-white"><span class="fa fa-list-alt"></span> Chat List</div>
+          </div>
+      </div>
+      <div class="overflow-auto" id="scrollableDiv">
+        <div class="container" style="margin-top: 70px;padding-bottom: 50px;">
+            <table class="table table-bordered">
+                <tr class="bg-light">
+                    <td>
+                        <div class="d-flex">
+                            <div class="user-icon"><span class="ti ti-user"></span></div>&nbsp&nbsp
+                            <div class="user-name"><h6>Radha</h6></div>
+                            <div class="right">
+                                <span class="badge-pill badge-dark">9</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="bg-light">
+                    <td>
+                        <div class="d-flex">
+                            <div class="user-icon"><span class="ti ti-user"></span></div>&nbsp&nbsp
+                            <div class="user-name"><h6>Krishna</h6></div>
+                            <div class="right">
+                                <span class="badge-pill badge-dark">9</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="bg-light">
+                    <td>
+                        <div class="d-flex">
+                            <div class="user-icon"><span class="ti ti-user"></span></div>&nbsp&nbsp
+                            <div class="user-name"><h6>Radha</h6></div>
+                            <div class="right">
+                                <span class="badge-pill badge-dark">9</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="bg-light">
+                    <td>
+                        <div class="d-flex">
+                            <div class="user-icon"><span class="ti ti-user"></span></div>&nbsp&nbsp
+                            <div class="user-name"><h6>Krishna</h6></div>
+                            <div class="right">
+                                <span class="badge-pill badge-dark">9</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="bg-light">
+                    <td>
+                        <div class="d-flex">
+                            <div class="user-icon"><span class="ti ti-user"></span></div>&nbsp&nbsp
+                            <div class="user-name"><h6>Radha</h6></div>
+                            <div class="right">
+                                <span class="badge-pill badge-dark">9</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="bg-light">
+                    <td>
+                        <div class="d-flex">
+                            <div class="user-icon"><span class="ti ti-user"></span></div>&nbsp&nbsp
+                            <div class="user-name"><h6>Krishna</h6></div>
+                            <div class="right">
+                                <span class="badge-pill badge-dark">9</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="bg-light">
+                    <td>
+                        <div class="d-flex">
+                            <div class="user-icon"><span class="ti ti-user"></span></div>&nbsp&nbsp
+                            <div class="user-name"><h6>Radha</h6></div>
+                            <div class="right">
+                                <span class="badge-pill badge-dark">9</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="bg-light">
+                    <td>
+                        <div class="d-flex">
+                            <div class="user-icon"><span class="ti ti-user"></span></div>&nbsp&nbsp
+                            <div class="user-name"><h6>Krishna</h6></div>
+                            <div class="right">
+                                <span class="badge-pill badge-dark">9</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="bg-light">
+                    <td>
+                        <div class="d-flex">
+                            <div class="user-icon"><span class="ti ti-user"></span></div>&nbsp&nbsp
+                            <div class="user-name"><h6>Radha</h6></div>
+                            <div class="right">
+                                <span class="badge-pill badge-dark">9</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="bg-light">
+                    <td>
+                        <div class="d-flex">
+                            <div class="user-icon"><span class="ti ti-user"></span></div>&nbsp&nbsp
+                            <div class="user-name"><h6>Krishna</h6></div>
+                            <div class="right">
+                                <span class="badge-pill badge-dark">9</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="bg-light">
+                    <td>
+                        <div class="d-flex">
+                            <div class="user-icon"><span class="ti ti-user"></span></div>&nbsp&nbsp
+                            <div class="user-name"><h6>Radha</h6></div>
+                            <div class="right">
+                                <span class="badge-pill badge-dark">9</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="bg-light">
+                    <td>
+                        <div class="d-flex">
+                            <div class="user-icon"><span class="ti ti-user"></span></div>&nbsp&nbsp
+                            <div class="user-name"><h6>Krishna</h6></div>
+                            <div class="right">
+                                <span class="badge-pill badge-dark">9</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="bg-light">
+                    <td>
+                        <div class="d-flex">
+                            <div class="user-icon"><span class="ti ti-user"></span></div>&nbsp&nbsp
+                            <div class="user-name"><h6>Radha</h6></div>
+                            <div class="right">
+                                <span class="badge-pill badge-dark">9</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="bg-light">
+                    <td>
+                        <div class="d-flex">
+                            <div class="user-icon"><span class="ti ti-user"></span></div>&nbsp&nbsp
+                            <div class="user-name"><h6>Krishna</h6></div>
+                            <div class="right">
+                                <span class="badge-pill badge-dark">9</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="navbar">
+        <a href="home.html" class="active"><span class="ti ti-home"></span></a>
+        <a href="chat-list.html"><span class="ti ti-comment"></span></a>
+        <a href="post-ad.html"><span class="ti ti-plus"></span></a>
+        <a href="my-ads.html"><span class="ti ti-package"></span></a>
+        <a href="account.html"><span class="ti ti-user"></span></a>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#loader").fadeOut(1000);
+        $("#main").fadeIn(1000);
+        $("tr.bg-light").on('click',function(){
+          window.location='chat.html';
+      });
+        $("span.ti-arrow-left").on('click',function(){
+          window.location='home.html';
+      });
+    });
+</script>
+</html>
